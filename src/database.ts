@@ -1,6 +1,6 @@
-import { knex as setupKnex, Knex } from "knex";
-import { env } from "./env"
-
+import setupKnex from "knex";
+import type { Knex } from "knex";
+import { env } from "./env";
 
 export const config: Knex.Config = {
   client: "sqlite",
